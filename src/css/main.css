@@ -1,0 +1,70 @@
+/* Paul Irish - paulirish.com – * { Box-sizing: Border-box } FTW */
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+body {background-color: #fefefe;}
+
+
+.container {
+  width: 600px;
+  margin: 56px auto;
+  font-family: 'Open Sans', "Helvetica", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {margin-bottom: 30px;}
+
+h1 {
+  display: inline-block;
+  line-height: 100px;
+  vertical-align:middle;
+  margin: 0 0 0 22px;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #111;
+}
+h2 {
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1em;
+  color: #111;
+}
+
+
+img {
+  width: 100px;
+  height: 100px;
+  vertical-align:middle;
+  border-radius: 50%;
+}
+
+p {
+  margin: 0 0 1.1em;
+  line-height: 1.5em;
+  font-weight: 300;
+  color: #333;
+}
+  strong {font-weight: 400}
+  a {
+    opacity: .9;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    transition: opacity .2s;
+  }
+    a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    .so       {color: #f90;}
+    .cio      {color: #1b2635;}
+    .hetic    {color: #9ecc3d;}
+    .twitter  {color: #34ccfe;}
+    .extensio {color: #ff7f66;}
+
+@media screen and (max-width: 800px) {
+  .container { width: 90%;}
+}
