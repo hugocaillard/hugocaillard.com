@@ -24,7 +24,7 @@ gulp.task('css', function() {
 });
 gulp.task('watch', function() {
   livereload.listen();
-  gulp.watch('src/css/*.css', ['css']);
+  gulp.watch('public/main.css', ['css']);
 });
 gulp.task('default', ['css', 'watch']);
 

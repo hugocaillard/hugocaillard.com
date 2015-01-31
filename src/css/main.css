@@ -26,9 +26,10 @@ h1 {
   color: #111;
 }
 h2 {
-  font-weight: 400;
-  font-size: 1.1em;
+  margin: .1em 0 .4em;
+  font-size: 1.2em;
   line-height: 1em;
+  font-weight: 400;
   color: #111;
 }
 
@@ -42,11 +43,11 @@ img {
 
 p {
   margin: 0 0 1.1em;
-  line-height: 1.5em;
+  line-height: 1.8em;
   font-weight: 300;
   color: #333;
 }
-  strong {font-weight: 400}
+  strong {font-weight: 400; margin: 0;}
   a {
     opacity: .9;
     font-weight: 400;
@@ -60,11 +61,25 @@ p {
     }
 
     .so       {color: #f90;}
-    .cio      {color: #1b2635;}
+    .cio      {color: #1d305d;}
+    .eio      {color: #80bd01;}
     .hetic    {color: #9ecc3d;}
     .twitter  {color: #34ccfe;}
     .extensio {color: #ff7f66;}
 
-@media screen and (max-width: 800px) {
-  .container { width: 90%;}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 86%;
+    font-size: .92em;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .container {
+    width: 86%;
+    font-size: .86em;
+  }
+  .no-smartphone {
+    display: none;
+  }
 }

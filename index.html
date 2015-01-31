@@ -31,7 +31,7 @@
 
     <section class="container">
       <header>
-        <img src="https://pbs.twimg.com/profile_images/438325944336392192/9yYVUJKm.jpeg" alt="me">
+        <img src="public/pp.jpeg" alt="me">
         <h1>Hugo Caillard</h1>
       </header>
 
@@ -47,18 +47,36 @@
       Of course I love <strong>HTML5</strong> and <strong>CSS3</strong> as well.</p>
       <p>Follow me on <a class="twitter" id="twitter" target="_blank" href="http://twitter.com/cohars">Twitter</a>!</p>
 
+
       <h2>Projects</h2>
 
-
-      <p><strong><a class="cio" target="_blank" href="http://conquest.io">Conquest</a></strong> is a multiplayer online real-time strategy game.<br>
-      Made using NodeJS (Koa), Socket.IO, MongoDB (Monk), Duo, SVG.JS and many other cool technologies.<br>
-      <a class="cio" target="_blank" href="https://github.com/hugocaillard/conquest">Conquest on GitHub</a><p>
+      <p>
+        <strong><a class="cio" target="_blank" href="http://conquest.io">Conquest</a></strong> is a multiplayer online real-time strategy game.<br>
+        <span class="no-smartphone">Made using NodeJS (Koa), Socket.IO, MongoDB (Monk), Duo, SVG.JS and many other cool technologies.<br></span>
+        <a class="cio" target="_blank" href="https://github.com/hugocaillard/conquest">Conquest on GitHub</a>
+      <p>
+      <p>
+        <strong><a class="eio" target="_blank" href="http://extens.io">extens.io</a></strong> is an open-source governance Node.js ecosystem to make a new kind of realtime web applications build on top of the <a href="http://sailsjs.org/" target="_blank">Sails framework</a>.<br>
+        <span class="no-smartphone">I mainly worked as a front-end developer on the admin system.<br></span>
+        <a class="eio" target="_blank" href="https://github.com/extensdotio">extens.io on GitHub</a>
+      <p>
 
 
     </section>
 
     <script>
-    var iOS=!1,p=navigator.platform;("iPad"===p||"iPhone"===p||"iPod"===p)&&(iOS=!0),iOS&&(document.getElementById("twitter").href="twitter://user?screen_name=cohars");
+    (function(window,document,undefined) {
+      // Simple Konami Code
+      var patern="38384040373937396665",code="",delta=0;
+      window.addEventListener("keyup",function(e){
+        code+=e?e.keyCode:event.keyCode,delta=code.length-patern.length,
+        delta>=0&&(code=code.substring(delta)),code===patern&&window.open("http://twitter.com/cohars","_blank")
+      });
+
+      // Change Twitter Code
+      var p=navigator.platform;
+      ("iPad"===p||"iPhone"===p||"iPod"===p)&&(document.getElementById("twitter").href="twitter://user?screen_name=cohars");
+    })(this,this.document);
     </script>
 
   </body>
