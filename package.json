@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "colors": "^1.0.3",
+    "gulp": "^3.8.11",
     "normalize.css": "^3.0.2"
   },
   "devDependencies": {

@@ -15,16 +15,21 @@ body {background-color: #fefefe;}
 }
 
 header {margin-bottom: 30px;}
+  .img-side {
+    display: inline-block;
+    margin: 0 0 0 22px;
+    vertical-align: middle;
+  }
+    h1 {
+      margin: 8px 0;
+      font-size: 1.4em;
+      font-weight: 700;
+      color: #111;
+    }
+    .social-links {
+    }
 
-h1 {
-  display: inline-block;
-  line-height: 100px;
-  vertical-align:middle;
-  margin: 0 0 0 22px;
-  font-size: 1.4em;
-  font-weight: 700;
-  color: #111;
-}
+
 h2 {
   margin: .1em 0 .4em;
   font-size: 1.2em;
@@ -60,12 +65,19 @@ p {
       text-decoration: underline;
     }
 
-    .so       {color: #f90;}
-    .cio      {color: #1d305d;}
-    .eio      {color: #80bd01;}
-    .hetic    {color: #9ecc3d;}
-    .twitter  {color: #34ccfe;}
-    .extensio {color: #ff7f66;}
+    .so         {color: #f90;}
+    .cio        {color: #1d305d;}
+    .eio        {color: #80bd01;}
+    .hetic      {color: #9ecc3d;}
+    .extensio   {color: #ff7f66;}
+    .fa-twitter {color: #34ccfe;}
+    .fa-github  {color: #333;}
+
+.fa {
+  font-size: 1.2em;
+}
+
+.break {clear: both;}
 
 @media screen and (max-width: 768px) {
   .container {
