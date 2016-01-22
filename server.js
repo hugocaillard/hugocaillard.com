@@ -7,14 +7,14 @@ var color = require('colors');
 var port = 8080;
 
 var mimeTypes = {
-  'htm': 'text/html',
+  'htm' : 'text/html',
   'html': 'text/html',
   'jpeg': 'image/jpeg',
-  'jpg': 'image/jpeg',
-  'png': 'image/png',
-  'gif': 'image/gif',
-  'js': 'text/javascript',
-  'css': 'text/css'
+  'jpg' : 'image/jpeg',
+  'png' : 'image/png',
+  'gif' : 'image/gif',
+  'js'  : 'text/javascript',
+  'css' : 'text/css'
 };
 
 function send404(res) {
@@ -26,7 +26,6 @@ function send404(res) {
 
 var server = http.createServer(function(req, res) {
   var uri = url.parse(req.url).pathname;
-
   var filename = path.join(process.cwd(), uri);
 
   // only one route and the public assets
@@ -70,4 +69,4 @@ var server = http.createServer(function(req, res) {
 
 server.listen(port);
 console.log('Server running at: %s.'.green, port);
-
+console.log('Version: ' + process.version);

@@ -1,15 +1,16 @@
 /* Paul Irish - paulirish.com – * { Box-sizing: Border-box } FTW */
 html {box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit;}
-body {background-color: #fefefe;}
-
+body {
+  background-color: #fefefe;
+  font-size: 16px;
+}
 
 .container {
   width: 600px;
   margin: 56px auto;
   font-family: 'Open Sans', "Helvetica", "Arial", sans-serif;
   font-size: 1em;
-  line-height: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -26,9 +27,10 @@ header {margin-bottom: 30px;}
       font-weight: 700;
       color: #111;
     }
-    .social-links {
+    .social-links a {
+      font-size: 1.4em;
+      padding: 12px 6px;
     }
-
 
 h2 {
   margin: .1em 0 .4em;
@@ -37,7 +39,6 @@ h2 {
   font-weight: 400;
   color: #111;
 }
-
 
 img {
   width: 100px;

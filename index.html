@@ -9,6 +9,7 @@
 
     <link rel="icon" href="public/favicon.ico" >
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css">
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="public/main.css">
 
@@ -36,22 +37,22 @@
         <div class="img-side">
           <h1>Hugo Caillard</h1>
           <div class="social-links">
-            <a href="http://twitter.com/cohars"><span class="fa fa-twitter"></span></a>
-            <a href="http://github.com/hugocaillard"><span class="fa fa-github"></span></a>
+            <a href="http://twitter.com/cohars" target="_blank" id="twitter"><span class="fa fa-twitter"></span></a>
+            <a href="http://github.com/hugocaillard" target="_blank"><span class="fa fa-github"></span></a>
           </div>
         </div>
       </header>
 
       <p>
-        21 years old.<br>
-        Third year student at <a class="hetic" target="_blank" href="http://www.hetic.net/">HETIC</a>, Paris.<br>
-        <strong>Hire me!</strong> I'm currently looking for an <strong>internship</strong> from July to October 2015.
+        22 years old.<br>
+        Fourth year student at <a class="hetic" target="_blank" href="http://www.hetic.net/">HETIC</a>, Paris.<br>
+        <strong>Hire me!</strong> I'm currently looking for an <strong>internship</strong> from July to December 2016 (in Paris, London, New-York, San Francisco, anywhere).
       </p>
 
-      <p>I'm a <strong>web developer</strong>, mainly focused on front-end until now.<br>
-      Interested in everything related to <strong>JavaScript</strong>. I also like to do things with <strong>NodeJS</strong>.<br>
+      <p>I'm a <strong>web developer</strong>.<br>
+      Interested in everything related to <strong>JavaScript</strong>. I like to do things with <strong>NodeJS</strong>.<br>
       I'm especially inspired by some modern technologies such as <a href="http://koajs.com/" target="_blank">Koa</a>,
-      <a href="http://facebook.github.io/react/" target="_blank">React</a>, <a href="https://iojs.org/" target="_blank">io.js</a> etc.<br>
+      <a href="http://facebook.github.io/react/" target="_blank">React</a> (Native); <strong>MongoDB</strong>.<br>
       Of course I love <strong>HTML5</strong> and <strong>CSS3</strong> as well.</p>
 
       <h2>Projects</h2>
@@ -81,7 +82,7 @@
 
       // Change Twitter Code
       var p=navigator.platform;
-      ("iPad"===p||"iPhone"===p||"iPod"===p)&&(document.getElementById("twitter").href="twitter://user?screen_name=cohars");
+      ('iPadiPhoneiPod'.includes(p))&&(document.getElementById("twitter").href="twitter://user?screen_name=cohars");
     })(this,this.document);
     </script>
 
